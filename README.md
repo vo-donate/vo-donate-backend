@@ -49,12 +49,12 @@
 
 ```json
 {
-  "_id": "user123",                     // 사용자 ID (문자열, 고유)
-  "password": "hashed_password",        // 해시된 비밀번호
+  "_id": "user123",                     
+  "password": "hashed_password",        
   "name": "홍길동",
   "wallet_address": "0x123...abc",
   "introduction": "안녕하세요, 기부 활동가입니다.",
-  "private_key": "0xabcdef..."          // 안전한 저장 방식 권장 (예: 암호화)
+  "private_key": "0xb8c9fbD07cD547660638E4c7Ac24e4f0c7746a71"          
 }
 ```
 
@@ -62,12 +62,12 @@
 
 ```json
 {
-  "_id": ObjectId("..."),                        // MongoDB 고유 ID
-  "user_id": "user123",                          // 사용자 ID (참조)
+  "_id": "684a712ad17fc61a5f3b0697",                        
+  "user_id": "user123",                          
   "contract_address": "0xProposalContract123",
   "start_time": "2025-06-08T15:30:00Z",
   "vote_end_time": "2025-06-08T16:30:00Z",
-  "voted_users": [                               // 투표한 사용자 ID 목록
+  "voted_users": [                               
     {
       "user_id": "user456",
       "yes": true
@@ -107,7 +107,7 @@
         ```json
         {
             "message": "로그인 성공.",
-            "token": "발급된_인증_토큰" // 이 토큰을 이후 모든 요청에 사용합니다.
+            "token": "발급된_인증_토큰" 
         }
         ```
         
@@ -150,7 +150,7 @@
         ```json
         {
             "wallet_address": "0xABC...DEF",
-            "balance": "1000000000000000000" // wei 단위
+            "balance": "1000000000000000000" 
         }
         ```
         
@@ -206,8 +206,8 @@
         ```json
         {
             "proposalText": "지역 커뮤니티 정원 조성을 위한 모금",
-            "voteDurationInMinutes": 60 // 투표 가능한 시간(분)
-            "donationDurationInMinutes": 60 // 투표 마감 후 기부가 가능한 시간(분)
+            "voteDurationInMinutes": 60 
+            "donationDurationInMinutes": 60 
         }
         ```
         
@@ -224,7 +224,7 @@
         ```json
         {
             "message": "기부 제안이 성공적으로 생성되었습니다.",
-            "proposalId": "6845b803eb25db87c905f199", // 새로 생성된 제안의 ID
+            "proposalId": "6845b803eb25db87c905f199", 
             "proposalContractAddress": "0xNewProposalAddress"
         }
         ```
@@ -254,13 +254,13 @@
             "id": "6845b803eb25db87c905f199",
             "proposer": "0xProposerAddress",
             "proposalText": "지역 커뮤니티 정원 조성을 위한 모금",
-            "totalDonation": "1000000000000000000", // wei 단위
+            "totalDonation": "1000000000000000000", 
             "finalized": true,
             "voteCount": "10",
             "voterCount": "15",
-            "balance": "500000000000000000", // 계약 잔액
+            "balance": "500000000000000000", 
             "votePassed": true,
-            "donationEndTime": 1678886400 // 유닉스 타임스탬프
+            "donationEndTime": 1678886400 
         }
         ```
         
@@ -360,7 +360,7 @@
         
         ```json
         {
-            "amount": "10000" // 기부할 금액(wei 단위), 예: 1 이더
+            "amount": "10000"
         }
         ```
         
