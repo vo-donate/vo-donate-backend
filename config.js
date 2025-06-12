@@ -6,8 +6,8 @@ const config = {
   PORT: process.env.PORT || 3001,
 
   // Smart Contract Addresses
-  REGISTRY_ADDRESS: "0x55Fa45f5D488abe283D47a1196dB19f7bAF46CDD",
-  FACTORY_ADDRESS: "0x042F8B0028723EB74829a52e244ffd7f4e636edf",
+  REGISTRY_ADDRESS: "0xce5898E5dFA1409EB6944Ce49523bF664DfA9CAc",
+  FACTORY_ADDRESS: "0xf2dB2F9BBe052cB6bD79b65e6a7C8eb9379f5A80",
 
   // RPC Configuration
   RPC_URL: "https://public-en-kairos.node.kaia.io",

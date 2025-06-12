@@ -245,8 +245,15 @@ exports.donate = async (req, res) => {
 
     const votePassed = await proposalContract.votePassed();
     const donationEndTime = await proposalContract.donationEndTime();
-    const currentTime = moment().utcOffset(9).toDate();
+    const currentTime = Math.floor(Date.now() / 1000);
 
+    if (!votePassed) {
+      return res.status(403).json({ message: "Vote has not ended" });
+    }
+
+    console.log(currentTime);
+    console.log(donationEndTime);
+    console.log(Number(donationEndTime));
     if (currentTime > Number(donationEndTime)) {
       return res.status(403).json({ message: "Donation period has ended" });
     }
