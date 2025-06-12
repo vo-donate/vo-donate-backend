@@ -3,7 +3,6 @@
 docker compose up
 ```
 ## 📁 프로젝트 구조
----
 ```
 📦vo-donate-backend
  ┣ 📂abis
