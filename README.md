@@ -320,7 +320,7 @@
         
         ```json
         {
-            "approve": true // 찬성(true), 반대(false)
+            "approve": true 
         }
         ```
         
