@@ -1,5 +1,10 @@
+## 🛠 개발 환경 설정
+```
+docker compose up
+```
 ## 📁 프로젝트 구조
 ---
+```
 📦vo-donate-backend
  ┣ 📂abis
  ┃ ┣ 📜DonationProposal.json
@@ -21,3 +26,4 @@
  ┣ 📜package-lock.json
  ┣ 📜package.json
  ┗ 📜server.js
+```
